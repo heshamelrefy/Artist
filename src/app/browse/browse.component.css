@@ -1,0 +1,142 @@
+body
+{
+    font-family: cursive;
+}
+/* .line-1:hover
+{   content: '';
+    position: relative;
+    height: 3px ;
+    width: 30%;
+    left: 15%;
+    background-color: #09c;
+    top: 110%;
+} */
+#viewOne
+{
+    position: relative;
+}
+#viewOne:hover
+{
+   cursor: pointer;
+   color: brown;
+}
+#viewTwo:hover
+{
+   cursor: pointer;
+   color: brown;
+}
+#viewThree:hover
+{
+   cursor: pointer;
+   color: brown;
+}
+.all-content
+{
+    padding-top: 100px;
+    position: relative;
+    height: auto;
+    
+    
+}
+table img
+{
+    height: 35px;
+    width: 35px;
+}
+.table 
+{
+    border: transparent;
+    position: relative;
+}
+.table button
+{
+    position: absolute;
+    left: 45%;
+    top: 120%;
+}
+.play-list
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 88%;
+    top: 15%;
+    
+    
+}
+.art-img
+{
+    position: relative;
+    left: 25%;
+    width: 75%;
+    border-radius: 100%;
+}
+#lines
+{
+    color: white;
+    
+    border:1px solid #fff;
+    background-color: transparent ;
+}
+#lines:hover
+{
+    border: none;
+    color: rgb(226, 78, 78);
+    
+}
+#lines:focus
+{
+    background-color: transparent ;
+    box-shadow: none;
+}
+#browse
+{
+    background-color: rgb(8, 5, 5);
+    display: flex;
+    justify-content: center;
+    height: 450vh;
+    color: white !important;
+}
+.all-icons i
+{
+    font-size: 1.1rem;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.all-img img
+{
+    height: 180px;
+
+}
+.all-img button
+{
+    position: relative;
+    left: 44%;
+    margin-top: 20px;
+}
+.all-imgs img
+{
+    height: 180px;
+}
+.all-imgs button
+{
+    position: relative;
+    left: 44%;
+    margin-top: 20px;
+}
+.all-img
+{
+    margin-top: 150px;
+   
+}
+
+.img-click
+{
+    height: 30px;
+    width: 30px;
+}
+
+/* --------------------------------------------------------- */
+
+  

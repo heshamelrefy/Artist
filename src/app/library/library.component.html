@@ -1,0 +1,142 @@
+
+      <!-- -------------------------------------------------------------------------------------------------- -->
+
+      <header id="create-acc" class=" position-relative">
+        
+       
+        <div class="container all-contact text-white-50">
+          <h1 class="head ">Account/Settings</h1>
+          <div class="row head-one">
+            <div class="col-md-6 col-sm-12">
+              <div class="img-acc d-flex justify-content-center align-items-center p-5 rounded-circle position-relative mt-4 ">
+                <img src="../assets/images/Group 990.png" class="img-group"  alt="">
+                <img src="../assets/images/Add To Playlist (web).png" class=" play-list" alt="">
+                
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="btn-acc mt-4">
+                <button id="head-one" class="btn btn-primary rounded-pill px-4 ">GO TO PREMIUM</button>
+              </div>
+            </div>
+          </div>
+          <h2 class=" mt-3">Contact</h2>
+          <form action=""  [formGroup]="loginForm" (ngSubmit)="loginForm.valid ">
+            <div class="row ">
+              <div class="col-md-6 col-sm-12 inp-border">First Name 
+                <input   formControlName="name" type="text" id="fName"  class="w-100 form-control" >
+                <span class="error" *ngIf="name.invalid && name.touched"> First Name is requird</span>
+                  
+              </div>
+              
+                <div class="col-md-6 col-sm-12 inp-border">Last Name 
+                  <input type="text" formControlName="lName" id="lName" class="w-100 form-control">
+                  <span class="error" *ngIf="lName.invalid && lName.touched">Last Name is requird</span>
+                </div>
+                  <div class="col-md-12 col-sm-12 inp-border">Password 
+                    <input type="text" formControlName="password" id="password" class="w-100 form-control">
+                    <span class="error" *ngIf="password.invalid && password.touched">Password is requird</span>
+                  </div>
+                    <div class="col-md-12 col-sm-12 inp-border">E-mail 
+                      <input type="text" formControlName="email" id="email" class="w-100 form-control">
+                      <span class="error" *ngIf="email.invalid && email.touched">Email is requird</span>
+                    </div>
+                    <div class="col-md-6 col-sm-12 op-border">Gender <br>
+                      <select class="form-select form-select-lg mb-3 w-100 " name="gender" id="gender">
+                        <option selected></option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                    </div>
+                      <div class="col-md-6 col-sm-12 op-border">Country <br>
+                        <select class="form-select form-select-lg mb-3 w-100" name="gender" id="gender">
+                          <option selected></option>
+                          <option value="1">Egypt</option>
+                          <option value="2">America</option>
+                          <option value="3">Germany</option>
+                          <option value="4">Italy</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 col-sm-12 op-border">Date Of Birth <br>
+                        <select class="form-select form-select-lg  w-100 " name="date" id="date">
+                          <option selected></option>
+                          <option *ngFor="let day of days" value="">{{day}}</option>
+                         
+                        </select>
+                      </div>
+                      <div class="col-md-4 col-sm-12 op-border">Month <br>
+                        <select class="form-select form-select-lg  w-100" name="month" id="month">
+                          <option selected></option>
+                          <option *ngFor="let month of months" value="">{{month}}</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 col-sm-12 op-border">Year <br>
+                        <select class="form-select form-select-lg  w-100" name="year" id="year">
+                          <option selected></option>
+                          <option *ngFor="let year of years" value="">{{year}}</option>
+                        </select>
+                      </div>
+                  
+            </div>
+          </form>
+          <div class="row mb-4 mt-4">
+            <p class=" col-xl-10 col-sm-12">Facebook</p>
+          <p class=" col-xl-2 col-sm-12" >Not Conected</p>
+          <p class=" col-xl-10 col-sm-12">Google</p>
+          <p class=" col-xl-2 col-sm-12" >Not Conected</p>
+          </div>
+          
+          <h2>Streaming</h2>
+          <p>Audio Quality (Premium feature)</p>
+          <div class="line mb-2"></div>
+          <div class="form-check d-flex  align-items-center">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+            <label class="form-check-label ml-4 text-dark" for="flexCheckCheckedDisabled">
+              Normal(128kb/s)
+            </label>
+          </div>
+          <div class="form-check d-flex  align-items-center">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+            <label class="form-check-label ml-4 text-dark" for="flexCheckDisabled">
+              High(192kb/s)
+            </label>
+          </div>
+          <div class="form-check d-flex  align-items-center">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+            <label class="form-check-label ml-4 text-dark" for="flexCheckDisabled">
+              Highest(320kb/s)
+            </label>
+          </div>
+      
+          <div class="line mb-4 mt-2"></div>
+      
+          <div class="end-form ">
+            <h3>Account</h3>
+            <div class="row">
+              <div class="col-md-10 col-sm-12">
+                <h6>Enable Browser Notifications</h6>
+                <h6>Language </h6>
+                <h6> Change Password </h6>
+                <h6> Add new account </h6>
+              <div class="disable-content">
+                <h6><label class="form-check-label ml-4 text-dark" for="flexCheckDisabled">Terms and conditions</label></h6>
+                <h6><label class="form-check-label ml-4 text-dark" for="flexCheckDisabled">Privacy policy</label></h6>
+                <h6><label class="form-check-label ml-4 text-dark" for="flexCheckDisabled">support</label></h6>
+              </div>
+             
+              
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <div class="form-check form-switch pb-2">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" >
+                  <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                </div>
+                <div class=" pointer-event ">
+                 English <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button [disabled]="loginForm.invalid" id="btn" (click)="welcome()" class="btn btn-transparent  rounded-pill login py-2">Login</button>
+        </div>
+      </header>

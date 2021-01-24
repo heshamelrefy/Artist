@@ -1,0 +1,24 @@
+.page-name
+{
+    position: relative;
+    right: 350px;
+}
+.content-right input
+{
+    padding:0px 60px;
+    
+    
+}
+.content-right i
+{
+    font-size: 1.1rem;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+}
+.dropdown-menu a
+{
+    position: relative;
+    right: 0px;
+}
